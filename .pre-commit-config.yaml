@@ -1,7 +1,7 @@
 fail_fast: true
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.3.0
+    rev: v3.2.0
     # multiple hooks:
     hooks:
       - id: check-ast
@@ -16,6 +16,7 @@ repos:
       - id: black
   - repo: https://github.com/prettier/pre-commit
     # weird case where rev version is not immediately after repo url
+    # also, the revision are branch names, not tags
     hooks:
       - id: prettier
         exclude: ^notebooks
